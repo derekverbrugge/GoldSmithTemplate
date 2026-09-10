@@ -7,7 +7,6 @@
   --muted: #b7b7b7;
   --border: #464646;
   --green: #a7e85b;
-  --green-dark: #24351b;
   --orange: #f5a044;
   --purple: #c39aff;
   --max-width: 1120px;
@@ -46,7 +45,7 @@ button {
   margin-inline: auto;
 }
 
-/* Shared header */
+/* Header */
 
 .site-header {
   position: sticky;
@@ -289,8 +288,13 @@ h3 {
 .priority-card {
   padding: 30px;
   border: 1px solid var(--border);
+  border-top: 3px solid var(--orange);
   border-radius: var(--radius);
   background: var(--surface);
+}
+
+.priority-card h3 {
+  color: var(--orange);
 }
 
 .priority-card p {
@@ -299,43 +303,7 @@ h3 {
   font-size: 14px;
 }
 
-.priority-icon {
-  display: grid;
-  place-items: center;
-  width: 45px;
-  height: 45px;
-  margin-bottom: 25px;
-  border-radius: 10px;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.green-card {
-  border-top: 3px solid var(--green);
-}
-
-.green-card .priority-icon {
-  background: rgba(167, 232, 91, 0.12);
-  color: var(--green);
-}
-
-.orange-card {
-  border-top: 3px solid var(--orange);
-}
-
-.orange-card .priority-icon {
-  background: rgba(245, 160, 68, 0.12);
-  color: var(--orange);
-}
-
-.purple-card {
-  border-top: 3px solid var(--purple);
-}
-
-.purple-card .priority-icon {
-  background: rgba(195, 154, 255, 0.12);
-  color: var(--purple);
-}
+/* All six cards use the same orange style. */
 
 .more-priorities {
   display: none;
@@ -359,14 +327,14 @@ h3 {
   border: 0;
   border-bottom: 1px solid var(--border);
   background: transparent;
-  color: var(--green);
+  color: var(--orange);
   cursor: pointer;
   font-size: 14px;
   font-weight: 700;
 }
 
 .more-link:hover {
-  color: #c5f98b;
+  color: #ffc27d;
 }
 
 .more-link .arrow {
