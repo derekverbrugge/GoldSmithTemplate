@@ -1,1 +1,1 @@
-# GoldSmithTemplate
+Demo: https://derekverbrugge.github.io/GoldSmithTemplate/
