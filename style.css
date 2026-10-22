@@ -526,3 +526,6 @@ h3 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Keep the bottom overscroll area the same color as the footer. */
+html { background-color: #202020; }
