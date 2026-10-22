@@ -529,3 +529,6 @@ h3 {
 
 /* Keep the bottom overscroll area the same color as the footer. */
 html { background-color: #202020; }
+
+/* Footer developer credit alignment and bottom breathing room. */
+.site-footer .template-credit { text-align: center; margin: .75rem 0 0; padding-bottom: 3.5rem; }
