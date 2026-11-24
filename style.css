@@ -532,3 +532,6 @@ html { background-color: #202020; }
 
 /* Footer developer credit alignment and bottom breathing room. */
 .site-footer .template-credit { text-align: center; margin: .75rem 0 0; padding-bottom: 3.5rem; }
+
+/* Website standards */
+a,a:visited,a:hover,a:active,a:focus{text-decoration:none!important}body{min-height:100vh;display:flex;flex-direction:column}main{flex:1}#site-footer{margin-top:auto}.template-credit{font-size:.75rem;text-align:center}.footer-links,.footer-navigation{flex-wrap:wrap} [hidden]{display:none!important}
