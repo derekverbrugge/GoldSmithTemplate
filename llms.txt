@@ -1,0 +1,5 @@
+# GoldSmithTemplate
+
+- [Gold Smith | For New Hampshire](https://derekverbrugge.github.io/GoldSmithTemplate/)
+
+[Full text](https://derekverbrugge.github.io/GoldSmithTemplate/llms-full.txt)
