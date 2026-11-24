@@ -61,7 +61,7 @@
           </article>
 
           <div class="more-priorities" id="more-priorities">
-            <article class="priority-card">
+            <article class="priority-card" hidden>
               <h3>Education & Opportunity</h3>
               <p>
                 Give people the skills, choices, and opportunities
@@ -69,7 +69,7 @@
               </p>
             </article>
 
-            <article class="priority-card">
+            <article class="priority-card" hidden>
               <h3>Local Jobs</h3>
               <p>
                 Support independent businesses, skilled trades,
@@ -77,13 +77,13 @@
               </p>
             </article>
 
-            <article class="priority-card">
+            <article class="priority-card" hidden>
               <h3>Good Government</h3>
               <p>
                 Make government more transparent, accountable,
                 and responsive to the people it serves.
               </p>
-            </article>
+            </article><button type="button" id="more-cards" aria-expanded="false" class="button" style="grid-column:1/-1;justify-self:center">More</button>
           </div>
         </div>
 
@@ -134,5 +134,5 @@
   <div id="site-footer"></div>
 
   <script src="script.js"></script>
-</body>
+<script>document.getElementById('more-cards').addEventListener('click',e=>{const b=e.currentTarget,open=b.getAttribute('aria-expanded')!=='true';document.querySelectorAll('.priority-card').forEach((c,i)=>c.hidden=i>=3&&!open);b.setAttribute('aria-expanded',String(open));b.textContent=open?'Show less':'More'});</script></body>
 </html>
